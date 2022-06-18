@@ -1,0 +1,24 @@
+i.icon
+{
+    font-size: 1.8em;
+}
+
+#new
+{
+    margin-top: 7em;
+}
+
+#index
+{
+    margin-top: 7em;
+}
+
+.blogg
+{
+    margin-top: 50px;
+}
+
+#delete
+{
+    display: inline;
+}

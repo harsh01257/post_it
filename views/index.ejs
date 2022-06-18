@@ -1,0 +1,16 @@
+<%- include ("partials/header") %>
+
+<div class="ui main text container segment" id="index">
+    <div class="ui huge header segment">RESTful app</div>
+    <% blog.forEach(function(x){ %>
+    <div class="blogg">
+        <h2><%= x.title %></h2>
+        <img src="<%= x.image %>" class="ui image" alt="">
+        <span><%= x.created.toDateString() %></span>
+        <p><%= x.body.substring(0,100) %>...</p>
+        <a href="/blogs/<%= x._id %>">Read More</a>
+    </div>
+    <% }) %>
+</div>
+
+<%- include ("partials/footer") %>
